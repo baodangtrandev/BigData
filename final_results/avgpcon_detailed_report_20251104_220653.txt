@@ -1,0 +1,71 @@
+DETAILED REPORT: AvgPCon per node
+================================================================================
+
+Training Time: 201.37 seconds (3.36 minutes)
+Start: 2025-11-04 22:24:56 | End: 2025-11-04 22:28:18
+
+REGRESSION PERFORMANCE
+--------------------------------------------------
+Model                RMSE         MAE          R²        
+------------------------------------------------------
+Linear Regression    32.1538      27.1869      0.3601    
+Random Forest        10.0127      6.1324       0.9380    
+GBT Regression       5.3254       3.0096       0.9824    
+
+
+DETAILED REGRESSION ANALYSIS
+================================================================================
+
+Linear Regression
+--------------------------------------------------------------------------------
+Root Mean Square Error (RMSE): 32.1538
+Mean Absolute Error (MAE): 27.1869
+R-squared (R²): 0.3601
+Mean Absolute Percentage Error (MAPE): 100.10%
+
+Prediction Statistics:
+  Actual - Min: 1.8335, Max: 168.6200, Mean: 83.6240
+  Predicted - Min: -459.6166, Max: 837.9521, Mean: 83.6202
+  Residuals - Min: -727.0020, Max: 574.7001, Mean: 0.0038
+  Residuals Std: 32.1538
+
+Additional Metrics:
+  Mean Squared Error (MSE): 1033.8688
+  Explained Variance: 0.3601
+
+
+Random Forest
+--------------------------------------------------------------------------------
+Root Mean Square Error (RMSE): 10.0127
+Mean Absolute Error (MAE): 6.1324
+R-squared (R²): 0.9380
+Mean Absolute Percentage Error (MAPE): 14.53%
+
+Prediction Statistics:
+  Actual - Min: 1.8335, Max: 168.6200, Mean: 83.6240
+  Predicted - Min: 2.0278, Max: 156.3486, Mean: 83.6364
+  Residuals - Min: -76.2736, Max: 75.5694, Mean: -0.0124
+  Residuals Std: 10.0127
+
+Additional Metrics:
+  Mean Squared Error (MSE): 100.2536
+  Explained Variance: 0.9380
+
+
+GBT Regression
+--------------------------------------------------------------------------------
+Root Mean Square Error (RMSE): 5.3254
+Mean Absolute Error (MAE): 3.0096
+R-squared (R²): 0.9824
+Mean Absolute Percentage Error (MAPE): 7.89%
+
+Prediction Statistics:
+  Actual - Min: 1.8335, Max: 168.6200, Mean: 83.6240
+  Predicted - Min: -17.9902, Max: 172.5846, Mean: 83.6365
+  Residuals - Min: -60.6783, Max: 68.6715, Mean: -0.0125
+  Residuals Std: 5.3254
+
+Additional Metrics:
+  Mean Squared Error (MSE): 28.3601
+  Explained Variance: 0.9824
+

@@ -1,0 +1,68 @@
+DETAILED REPORT: PClass (compute-bound vs others)
+================================================================================
+
+Training Time: 508.59 seconds (8.48 minutes)
+Start: 2025-11-04 22:16:24 | End: 2025-11-04 22:24:53
+
+CLASSIFICATION PERFORMANCE
+--------------------------------------------------
+Model                AUC        Accuracy     F1        
+----------------------------------------------------
+Logistic Regression  0.8796     0.8556       0.8444    
+Random Forest        1.0000     0.9975       0.9975    
+Gradient Boosting    1.0000     0.9977       0.9977    
+
+
+DETAILED CLASSIFICATION REPORTS
+================================================================================
+
+Logistic Regression
+--------------------------------------------------------------------------------
+              precision    recall  f1-score   support
+
+     Class 0       0.86      0.96      0.91    140685
+     Class 1       0.81      0.53      0.64     44954
+
+    accuracy                           0.86    185639
+   macro avg       0.84      0.75      0.77    185639
+weighted avg       0.85      0.86      0.84    185639
+
+Confusion Matrix:
+True\Pred    0    1
+    0     134958 5727
+    1     21087 23867
+
+
+Random Forest
+--------------------------------------------------------------------------------
+              precision    recall  f1-score   support
+
+     Class 0       1.00      1.00      1.00    140685
+     Class 1       0.99      1.00      0.99     44954
+
+    accuracy                           1.00    185639
+   macro avg       1.00      1.00      1.00    185639
+weighted avg       1.00      1.00      1.00    185639
+
+Confusion Matrix:
+True\Pred    0    1
+    0     140324  361
+    1      109 44845
+
+
+Gradient Boosting
+--------------------------------------------------------------------------------
+              precision    recall  f1-score   support
+
+     Class 0       1.00      1.00      1.00    140685
+     Class 1       0.99      1.00      1.00     44954
+
+    accuracy                           1.00    185639
+   macro avg       1.00      1.00      1.00    185639
+weighted avg       1.00      1.00      1.00    185639
+
+Confusion Matrix:
+True\Pred    0    1
+    0     140395  290
+    1      144 44810
+

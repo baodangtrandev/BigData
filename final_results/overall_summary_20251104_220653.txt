@@ -1,0 +1,31 @@
+OVERALL TRAINING SUMMARY
+================================================================================
+
+Training Session: 20251104_220653
+Total Training Time: 1470.59 seconds (24.51 minutes)
+Number of Tasks: 4
+Results Directory: D:/BigData/results
+Checkpoints Directory: D:/BigData/checkpoints
+
+BEST PERFORMING MODELS
+--------------------------------------------------
+
+Exit Code (completed vs not):
+  🏆 Best Model: Random Forest
+  📊 AUC: 0.9955 | Accuracy: 0.9736 | F1: 0.9729
+  ⏱️ Training Time: 9.42 minutes
+
+PClass (compute-bound vs others):
+  🏆 Best Model: Gradient Boosting
+  📊 AUC: 1.0000 | Accuracy: 0.9977 | F1: 0.9977
+  ⏱️ Training Time: 8.48 minutes
+
+AvgPCon per node:
+  🏆 Best Model: GBT Regression
+  📊 RMSE: 5.3254 | MAE: 3.0096 | R²: 0.9824
+  ⏱️ Training Time: 3.36 minutes
+
+Duration (minutes):
+  🏆 Best Model: GBT Regression
+  📊 RMSE: 76.8136 | MAE: 25.2092 | R²: 0.9649
+  ⏱️ Training Time: 3.26 minutes
